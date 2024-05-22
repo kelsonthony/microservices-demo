@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import twitter4j.FilterQuery;
@@ -18,9 +19,7 @@ import javax.annotation.PreDestroy;
 import java.util.Arrays;
 
 @Component
-//@Primary
-@Qualifier("twitterKafkaStreamRunner")
-@ConditionalOnExpression("${twitter-kafka-service.enable-v2-tweets} && not ${twitter-kafka-service.enable-mock-tweets}")
+@ConditionalOnProperty(name = "twitter-kafka-service.enable-mock-tweets", havingValue = "false", matchIfMissing = true)
 public class TwitterKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterKafkaStreamRunner.class);

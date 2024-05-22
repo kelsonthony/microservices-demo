@@ -23,7 +23,7 @@ public class TwitterKafkaServiceApplication implements CommandLineRunner {
     private final StreamRunner streamRunner;
 
     public TwitterKafkaServiceApplication(TwitterKafkaServiceConfigData twitterKafkaServiceConfigData,
-                                          @Qualifier("twitterKafkaStreamRunner") StreamRunner streamRunner) {
+                                          StreamRunner streamRunner) {
         this.twitterKafkaServiceConfigData = twitterKafkaServiceConfigData;
         this.streamRunner = streamRunner;
     }
