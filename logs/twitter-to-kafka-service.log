@@ -1,0 +1,119 @@
+2024-05-22 00:03:07 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32280 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:03:07 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.271 seconds (JVM running for 4.444)
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:03:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:03:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:31)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:54)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:40)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:05:55 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32370 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:05:55 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.312 seconds (JVM running for 4.829)
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:05:57 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:05:57 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:32)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:07:31 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32462 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:07:31 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 1.998 seconds (JVM running for 4.372)
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:07:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:07:33 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:32)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:09:51 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32561 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:09:51 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.294 seconds (JVM running for 4.59)
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:09:52 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2024-05-22 00:09:59 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2024-05-22 00:10:04 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:10:29 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:02 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:11:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:11:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:11:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:11:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:34 [SpringContextShutdownHook] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
