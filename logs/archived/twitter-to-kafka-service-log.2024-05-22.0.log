@@ -1,0 +1,326 @@
+2024-05-22 00:03:07 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32280 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:03:07 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.271 seconds (JVM running for 4.444)
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:03:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:03:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:31)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:54)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:40)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:03:08 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:05:55 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32370 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:05:55 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.312 seconds (JVM running for 4.829)
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:05:57 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:05:57 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:32)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:05:57 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:07:31 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32462 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:07:31 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 1.998 seconds (JVM running for 4.372)
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:07:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 00:07:33 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:32)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.run(TwitterKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-05-22 00:07:33 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 00:09:51 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 32561 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 00:09:51 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.294 seconds (JVM running for 4.59)
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 00:09:52 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 00:09:52 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-05-22 00:09:54 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-05-22 00:09:55 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:09:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2024-05-22 00:09:59 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2024-05-22 00:10:04 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:10:29 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:10:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:02 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:11:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:11:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 00:11:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 00:11:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-05-22 00:11:34 [SpringContextShutdownHook] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2024-05-22 19:46:17 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 5526 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 19:46:17 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 19:46:18 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value="twitterKafkaStreamRunner")}
+2024-05-22 19:46:18 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-22 19:46:18 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value="twitterKafkaStreamRunner")}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.kafka.service.TwitterKafkaServiceApplication.main(TwitterKafkaServiceApplication.java:32)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value="twitterKafkaStreamRunner")}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 19 common frames omitted
+2024-05-22 19:46:58 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 5611 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 19:46:58 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 19:47:00 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.034 seconds (JVM running for 4.36)
+2024-05-22 19:47:00 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 19:47:00 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:47:00 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 19:47:00 [main] INFO  c.m.d.t.k.s.r.i.MockKafkaStreamRunner - Starting mock stream with keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:47:00 [pool-1-thread-1] ERROR c.m.d.t.k.s.r.i.MockKafkaStreamRunner - Error while creating status from raw json
+twitter4j.TwitterException: Unexpected date format(Wed May 22 19:47:00 -03:00 2024) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.text.ParseException: Unparseable date: "Wed May 22 19:47:00 -03:00 2024"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2024-05-22 19:51:09 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 5729 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 19:51:09 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 19:51:11 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 1.986 seconds (JVM running for 4.052)
+2024-05-22 19:51:11 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 19:51:11 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:51:11 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 19:51:11 [main] INFO  c.m.d.t.k.s.r.i.MockKafkaStreamRunner - Starting mock stream with keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:51:11 [pool-1-thread-1] ERROR c.m.d.t.k.s.r.i.MockKafkaStreamRunner - Error while creating status from raw json
+twitter4j.TwitterException: Unexpected date format(Wed May 22 19:51:11 -03:00 2024) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.text.ParseException: Unparseable date: "Wed May 22 19:51:11 -03:00 2024"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2024-05-22 19:54:45 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 5852 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 19:54:45 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 19:54:46 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.223 seconds (JVM running for 4.606)
+2024-05-22 19:54:46 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 19:54:46 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:54:46 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 19:54:46 [main] INFO  c.m.d.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:54:46 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: libero consectetuer elit adipiscing Kafka purus Lorem ipsum
+2024-05-22 19:54:48 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: amet congue sit dolor Microservices lectus ultricies
+2024-05-22 19:54:49 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ultricies magna malesuada pulvinar libero Elasticsearch dolor amet ultricies
+2024-05-22 19:54:50 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: magna elit massa Fusce Microservices lectus sed libero
+2024-05-22 19:54:51 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus purus porttitor congue consectetuer Kafka adipiscing adipiscing pulvinar
+2024-05-22 19:54:52 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada elit adipiscing Java posuere Fusce
+2024-05-22 19:54:53 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada dolor pulvinar Elasticsearch Maecenas sed
+2024-05-22 19:54:54 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: elit amet malesuada posuere Kafka pulvinar adipiscing
+2024-05-22 19:54:55 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: magna purus ultricies congue amet Elasticsearch massa malesuada lectus pulvinar
+2024-05-22 19:54:56 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus Maecenas magna Java elit lectus
+2024-05-22 19:54:57 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada porttitor ipsum libero consectetuer Spring massa ultricies posuere
+2024-05-22 19:54:58 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Lorem lectus porttitor massa purus Microservices libero magna sit
+2024-05-22 19:54:59 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: libero pulvinar malesuada Java purus posuere
+2024-05-22 19:55:00 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar pulvinar sit purus sit consectetuer Java congue ipsum magna amet
+2024-05-22 19:55:01 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus lectus libero Microservices sed adipiscing
+2024-05-22 19:55:02 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: magna massa elit Java pulvinar sit
+2024-05-22 19:55:03 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce magna congue Kafka amet Fusce
+2024-05-22 19:55:04 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: congue ultricies sit Elasticsearch dolor ipsum
+2024-05-22 19:55:05 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: porttitor porttitor ipsum Maecenas Elasticsearch Maecenas ultricies
+2024-05-22 19:55:06 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada pulvinar consectetuer Fusce Java dolor Fusce
+2024-05-22 19:55:07 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar ipsum elit Microservices magna ultricies
+2024-05-22 19:55:08 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: posuere elit dolor dolor sed Kafka amet purus sed purus
+2024-05-22 19:55:09 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: libero Lorem magna sit Elasticsearch sit dolor
+2024-05-22 19:55:10 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus elit sed Fusce Microservices massa sit massa
+2024-05-22 19:55:11 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sed sit magna sed Elasticsearch elit posuere porttitor
+2024-05-22 19:55:12 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar consectetuer amet congue Maecenas Elasticsearch pulvinar ipsum sit consectetuer
+2024-05-22 19:55:13 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: porttitor porttitor Lorem libero sit Spring sit libero amet
+2024-05-22 19:55:14 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus ipsum libero porttitor Java pulvinar adipiscing Maecenas
+2024-05-22 19:55:15 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: massa Lorem purus purus Elasticsearch consectetuer dolor
+2024-05-22 19:55:16 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: porttitor congue pulvinar Fusce dolor Elasticsearch purus porttitor libero
+2024-05-22 19:55:17 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar sed Fusce amet Java sit massa lectus
+2024-05-22 19:55:18 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: adipiscing elit Lorem lectus malesuada Maecenas Kafka sit posuere amet amet
+2024-05-22 19:55:19 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: dolor amet ipsum sit malesuada ipsum Spring Fusce porttitor porttitor porttitor
+2024-05-22 19:55:20 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: libero malesuada sit ipsum Microservices consectetuer consectetuer
+2024-05-22 19:55:21 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sit posuere porttitor Fusce dolor elit Spring malesuada malesuada sed sed
+2024-05-22 19:55:22 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sed adipiscing malesuada massa Maecenas Java pulvinar massa congue
+2024-05-22 19:55:23 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: elit Fusce congue pulvinar Fusce Fusce Kafka purus congue libero lectus
+2024-05-22 19:55:24 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: elit amet consectetuer Elasticsearch Maecenas ipsum
+2024-05-22 19:55:25 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Maecenas amet massa Spring pulvinar congue
+2024-05-22 19:55:26 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar dolor magna sed Kafka pulvinar libero Lorem
+2024-05-22 19:55:27 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ipsum Lorem congue lectus Kafka adipiscing posuere libero
+2024-05-22 19:55:28 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ultricies malesuada posuere magna consectetuer Spring libero lectus lectus ipsum
+2024-05-22 19:55:29 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: porttitor Lorem pulvinar sed Lorem ultricies Microservices consectetuer malesuada sit purus
+2024-05-22 19:55:30 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce consectetuer congue posuere dolor Java consectetuer massa sit
+2024-05-22 19:55:31 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar amet Fusce dolor lectus amet Kafka adipiscing porttitor Lorem elit
+2024-05-22 19:55:32 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: posuere elit elit lectus sit Kafka Fusce purus Fusce dolor
+2024-05-22 19:55:33 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ipsum congue Maecenas libero Kafka consectetuer lectus
+2024-05-22 19:55:34 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: dolor consectetuer adipiscing congue Kafka amet Fusce
+2024-05-22 19:55:35 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: elit sit libero Microservices congue sit
+2024-05-22 19:55:36 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: congue purus ultricies libero Elasticsearch lectus congue amet
+2024-05-22 19:55:37 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sed elit Lorem ultricies lectus Kafka Fusce massa pulvinar
+2024-05-22 19:55:38 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: posuere Maecenas Fusce lectus Spring lectus dolor
+2024-05-22 19:55:39 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Lorem dolor ultricies ultricies Microservices Maecenas amet
+2024-05-22 19:55:40 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: dolor Lorem elit Elasticsearch consectetuer ultricies
+2024-05-22 19:55:41 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus lectus sit massa dolor Spring massa massa dolor Fusce
+2024-05-22 19:55:42 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce Fusce libero dolor Microservices malesuada ipsum magna
+2024-05-22 19:55:43 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus libero congue Elasticsearch malesuada amet
+2024-05-22 19:55:44 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Maecenas sed lectus ultricies Fusce congue Microservices Fusce posuere Lorem ipsum
+2024-05-22 19:55:45 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada massa sit Microservices sit purus
+2024-05-22 19:55:46 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: libero congue purus posuere Lorem Kafka ultricies congue magna pulvinar
+2024-05-22 19:55:47 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sed libero Fusce malesuada consectetuer libero Microservices dolor elit ultricies adipiscing
+2024-05-22 19:55:48 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Maecenas Lorem massa ultricies sed Spring consectetuer ultricies magna
+2024-05-22 19:55:49 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar congue Maecenas Kafka libero sed
+2024-05-22 19:55:50 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce elit dolor Maecenas ipsum Microservices Maecenas lectus porttitor massa
+2024-05-22 19:55:51 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce Lorem sed ipsum Java posuere sed Maecenas
+2024-05-22 19:55:52 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: amet consectetuer lectus amet Lorem Elasticsearch sed massa amet
+2024-05-22 19:55:53 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: porttitor dolor adipiscing ultricies Microservices amet libero sit
+2024-05-22 19:55:54 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus ultricies ipsum amet elit ultricies Microservices malesuada consectetuer purus ultricies
+2024-05-22 19:55:55 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ipsum amet consectetuer magna Spring sit congue
+2024-05-22 19:55:56 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ipsum posuere sed magna Elasticsearch adipiscing sit massa
+2024-05-22 19:55:57 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Lorem magna consectetuer Maecenas adipiscing Microservices amet posuere sit massa
+2024-05-22 19:55:58 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ultricies lectus elit elit massa amet Kafka massa libero massa lectus
+2024-05-22 19:55:59 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus adipiscing porttitor adipiscing Elasticsearch sed lectus consectetuer
+2024-05-22 19:56:00 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus purus adipiscing Microservices elit malesuada
+2024-05-22 19:56:01 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar pulvinar malesuada congue Elasticsearch magna dolor
+2024-05-22 19:56:02 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: purus magna amet malesuada porttitor amet Java posuere malesuada adipiscing magna
+2024-05-22 19:56:03 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sit Lorem lectus porttitor magna pulvinar Elasticsearch massa Maecenas pulvinar pulvinar
+2024-05-22 19:56:04 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ipsum amet posuere sed sed Microservices ultricies pulvinar sed malesuada
+2024-05-22 19:56:05 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: magna amet ultricies malesuada adipiscing Java massa elit libero Lorem
+2024-05-22 19:56:06 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: ultricies elit consectetuer Microservices massa adipiscing
+2024-05-22 19:56:07 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: dolor malesuada elit adipiscing Elasticsearch sit adipiscing
+2024-05-22 19:56:08 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada congue ipsum adipiscing pulvinar Spring Fusce sit purus sit
+2024-05-22 19:56:09 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: sed porttitor Maecenas purus Spring posuere sed adipiscing
+2024-05-22 19:56:10 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: congue consectetuer elit Spring Fusce magna
+2024-05-22 19:56:11 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Lorem Fusce sit Java Maecenas Fusce
+2024-05-22 19:56:12 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: malesuada Fusce ipsum sed Kafka posuere posuere
+2024-05-22 19:56:13 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce sed amet sit sed Elasticsearch sed ultricies porttitor
+2024-05-22 19:56:14 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: congue Lorem ultricies Maecenas Elasticsearch dolor Lorem
+2024-05-22 19:56:15 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: congue Fusce sed massa Lorem Microservices pulvinar adipiscing elit purus
+2024-05-22 19:56:16 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: elit elit Fusce ipsum Elasticsearch ipsum libero amet
+2024-05-22 19:56:17 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: pulvinar sed purus libero porttitor Microservices consectetuer ipsum massa purus
+2024-05-22 19:56:18 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: Fusce pulvinar malesuada pulvinar Java Fusce consectetuer
+2024-05-22 19:56:19 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: magna malesuada amet lectus pulvinar Kafka congue sed dolor posuere
+2024-05-22 19:56:20 [pool-1-thread-1] INFO  c.m.d.t.k.s.l.TwitterKafkaStatusListener - Twitter Status with text: lectus sed sit ultricies magna Kafka purus Lorem libero
+2024-05-22 19:57:30 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Starting TwitterKafkaServiceApplication on penguin with PID 5968 (/home/kthony/projects/microservices-demo/twitter-to-kafka-service/target/classes started by kthony in /home/kthony/projects/microservices-demo)
+2024-05-22 19:57:30 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-22 19:57:32 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Started TwitterKafkaServiceApplication in 2.288 seconds (JVM running for 4.244)
+2024-05-22 19:57:32 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Apps Twitter Starts...
+2024-05-22 19:57:32 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:57:32 [main] INFO  c.m.d.t.k.s.TwitterKafkaServiceApplication - Hello microservices world!
+2024-05-22 19:57:32 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 19:57:32 [main] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-05-22 19:57:33 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 19:57:33 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-05-22 19:57:34 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 19:57:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 19:57:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-05-22 19:57:35 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 19:57:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 19:57:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2024-05-22 19:57:37 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 19:57:39 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-05-22 19:57:39 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2024-05-22 19:57:41 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-05-22 19:57:41 [SpringContextShutdownHook] INFO  c.m.d.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
