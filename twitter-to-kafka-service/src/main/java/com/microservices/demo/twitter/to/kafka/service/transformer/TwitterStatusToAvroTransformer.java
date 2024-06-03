@@ -1,4 +1,4 @@
-package com.microservices.demo.twitter.kafka.service.transformer;
+package com.microservices.demo.twitter.to.kafka.service.transformer;
 
 import com.microservices.demo.kafka.avro.model.TwitterAvroModel;
 import org.springframework.stereotype.Component;

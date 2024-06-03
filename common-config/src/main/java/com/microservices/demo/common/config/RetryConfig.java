@@ -12,8 +12,8 @@ public class RetryConfig {
 
     private RetryConfigData retryConfigData;
 
-    public RetryConfig(RetryConfigData retryConfigData) {
-        this.retryConfigData = retryConfigData;
+    public RetryConfig(RetryConfigData configData) {
+        this.retryConfigData = configData;
     }
 
     @Bean
@@ -21,7 +21,6 @@ public class RetryConfig {
         RetryTemplate retryTemplate = new RetryTemplate();
 
         ExponentialBackOffPolicy exponentialBackOffPolicy = new ExponentialBackOffPolicy();
-
         exponentialBackOffPolicy.setInitialInterval(retryConfigData.getInitialIntervalMs());
         exponentialBackOffPolicy.setMaxInterval(retryConfigData.getMaxIntervalMs());
         exponentialBackOffPolicy.setMultiplier(retryConfigData.getMultiplier());
@@ -29,7 +28,6 @@ public class RetryConfig {
         retryTemplate.setBackOffPolicy(exponentialBackOffPolicy);
 
         SimpleRetryPolicy simpleRetryPolicy = new SimpleRetryPolicy();
-
         simpleRetryPolicy.setMaxAttempts(retryConfigData.getMaxAttempts());
 
         retryTemplate.setRetryPolicy(simpleRetryPolicy);

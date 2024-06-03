@@ -20,8 +20,8 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
 
     private KafkaTemplate<Long, TwitterAvroModel> kafkaTemplate;
 
-    public TwitterKafkaProducer(KafkaTemplate<Long, TwitterAvroModel> kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
+    public TwitterKafkaProducer(KafkaTemplate<Long, TwitterAvroModel> template) {
+        this.kafkaTemplate = template;
     }
 
     @Override
@@ -40,23 +40,23 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
         }
     }
 
-    private static void addCallback(String topicName, TwitterAvroModel message,
-                                    ListenableFuture<SendResult<Long, TwitterAvroModel>> kafkaResultFuture) {
-        kafkaResultFuture.addCallback(new ListenableFutureCallback<SendResult<Long, TwitterAvroModel>>() {
+    private void addCallback(String topicName, TwitterAvroModel message,
+                             ListenableFuture<SendResult<Long, TwitterAvroModel>> kafkaResultFuture) {
+        kafkaResultFuture.addCallback(new ListenableFutureCallback<>() {
             @Override
             public void onFailure(Throwable throwable) {
-                LOG.error("Error while sending message='{}' to topic='{}'", message.toString(), topicName, throwable);
+                LOG.error("Error while sending message {} to topic {}", message.toString(), topicName, throwable);
             }
 
             @Override
             public void onSuccess(SendResult<Long, TwitterAvroModel> result) {
-                RecordMetadata metadata =  result.getRecordMetadata();
-                LOG.debug("Received new metadata. Topic: {}; Partition: {}; Offset: {}; Timestamp: {} at time {}",
-                        metadata.topic(),
-                        metadata.partition(),
-                        metadata.offset(),
-                        metadata.timestamp(),
-                        System.nanoTime());
+                    RecordMetadata metadata = result.getRecordMetadata();
+                    LOG.debug("Received new metadata. Topic: {}; Partition {}; Offset {}; Timestamp {}, at time {}",
+                            metadata.topic(),
+                            metadata.partition(),
+                            metadata.offset(),
+                            metadata.timestamp(),
+                            System.nanoTime());
             }
         });
     }

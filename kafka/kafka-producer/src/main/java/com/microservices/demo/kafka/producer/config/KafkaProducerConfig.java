@@ -14,17 +14,16 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-
 @Configuration
-public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecordBase>  {
+public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecordBase> {
 
     private final KafkaConfigData kafkaConfigData;
 
     private final KafkaProducerConfigData kafkaProducerConfigData;
 
-    public KafkaProducerConfig(KafkaConfigData kafkaConfigData, KafkaProducerConfigData kafkaProducerConfigData) {
-        this.kafkaConfigData = kafkaConfigData;
-        this.kafkaProducerConfigData = kafkaProducerConfigData;
+    public KafkaProducerConfig(KafkaConfigData configData, KafkaProducerConfigData producerConfigData) {
+        this.kafkaConfigData = configData;
+        this.kafkaProducerConfigData = producerConfigData;
     }
 
     @Bean
@@ -41,7 +40,6 @@ public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecor
         props.put(ProducerConfig.ACKS_CONFIG, kafkaProducerConfigData.getAcks());
         props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, kafkaProducerConfigData.getRequestTimeoutMs());
         props.put(ProducerConfig.RETRIES_CONFIG, kafkaProducerConfigData.getRetryCount());
-
         return props;
     }
 

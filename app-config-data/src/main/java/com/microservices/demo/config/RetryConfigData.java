@@ -14,5 +14,4 @@ public class RetryConfigData {
     private Double multiplier;
     private Integer maxAttempts;
     private Long sleepTimeMs;
-
 }

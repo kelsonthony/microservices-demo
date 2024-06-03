@@ -1,9 +1,9 @@
-package com.microservices.demo.twitter.kafka.service.runner.impl;
+package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
 import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
-import com.microservices.demo.twitter.kafka.service.exception.TwitterKafkaServiceException;
-import com.microservices.demo.twitter.kafka.service.listener.TwitterKafkaStatusListener;
-import com.microservices.demo.twitter.kafka.service.runner.StreamRunner;
+import com.microservices.demo.twitter.to.kafka.service.exception.TwitterToKafkaServiceException;
+import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
+import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -20,9 +20,8 @@ import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
-
 @Component
-@ConditionalOnProperty(name = "twitter-kafka-service.enable-mock-tweets", havingValue = "true")
+@ConditionalOnProperty(name = "twitter-to-kafka-service.enable-mock-tweets", havingValue = "true")
 public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(MockKafkaStreamRunner.class);
@@ -102,7 +101,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
         try {
             Thread.sleep(sleepTimeMs);
         } catch (InterruptedException e) {
-            throw new TwitterKafkaServiceException("Error while sleeping for waiting new status to create!!");
+            throw new TwitterToKafkaServiceException("Error while sleeping for waiting new status to create!!");
         }
     }
 
