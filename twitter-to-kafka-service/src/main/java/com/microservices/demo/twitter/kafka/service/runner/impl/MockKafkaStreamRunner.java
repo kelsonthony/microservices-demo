@@ -1,6 +1,6 @@
 package com.microservices.demo.twitter.kafka.service.runner.impl;
 
-import com.microservices.demo.config.TwitterKafkaServiceConfigData;
+import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.kafka.service.exception.TwitterKafkaServiceException;
 import com.microservices.demo.twitter.kafka.service.listener.TwitterKafkaStatusListener;
 import com.microservices.demo.twitter.kafka.service.runner.StreamRunner;
@@ -27,7 +27,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(MockKafkaStreamRunner.class);
 
-    private final TwitterKafkaServiceConfigData twitterKafkaServiceConfigData;
+    private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
     private final TwitterKafkaStatusListener twitterKafkaStatusListener;
 
@@ -67,18 +67,18 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final String TWITTER_STATUS_DATE_FORMAT = "EEE MMM dd HH:mm:ss zzz yyyy";
 
-    public MockKafkaStreamRunner(TwitterKafkaServiceConfigData configData,
+    public MockKafkaStreamRunner(TwitterToKafkaServiceConfigData configData,
                                  TwitterKafkaStatusListener statusListener) {
-        this.twitterKafkaServiceConfigData = configData;
+        this.twitterToKafkaServiceConfigData = configData;
         this.twitterKafkaStatusListener = statusListener;
     }
 
     @Override
     public void start() throws TwitterException {
-        final String[] keywords = twitterKafkaServiceConfigData.getTwitterKeywords().toArray(new String[0]);
-        final int minTweetLength = twitterKafkaServiceConfigData.getMockMinTweetLength();
-        final int maxTweetLength = twitterKafkaServiceConfigData.getMockMaxTweetLength();
-        long sleepTimeMs = twitterKafkaServiceConfigData.getMockSleepMs();
+        final String[] keywords = twitterToKafkaServiceConfigData.getTwitterKeywords().toArray(new String[0]);
+        final int minTweetLength = twitterToKafkaServiceConfigData.getMockMinTweetLength();
+        final int maxTweetLength = twitterToKafkaServiceConfigData.getMockMaxTweetLength();
+        long sleepTimeMs = twitterToKafkaServiceConfigData.getMockSleepMs();
         LOG.info("Starting mock filtering twitter streams for keywords {}", Arrays.toString(keywords));
         simulateTwitterStream(keywords, minTweetLength, maxTweetLength, sleepTimeMs);
     }

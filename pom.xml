@@ -63,6 +63,16 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-admin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-producer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
                 <version>${spring.boot.version}</version>
@@ -149,8 +159,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
-
         </dependencies>
     </dependencyManagement>
 
