@@ -151,12 +151,8 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-
-
 		</dependencies>
 	</dependencyManagement>
-
-
 	<build>
 		<plugins>
 			<plugin>
