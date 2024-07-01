@@ -6,4 +6,9 @@ spring:
   cloud:
     config:
       name: twitter-to-kafka-service,config-client
-      uri: http://localhost:8888
+      username: spring_cloud_user
+      password: ENC(wH29dRqVXs2WxrAWG2YTbOeYODetjvg04qQIzwz39Tx/k5OkQFlkpiI+WrGR7YZtzW7xQrjhx2rhfMOv5TE9qw==)
+
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020

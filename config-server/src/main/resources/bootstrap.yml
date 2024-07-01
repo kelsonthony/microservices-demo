@@ -5,6 +5,17 @@ spring:
     config:
       server:
         git:
-          uri: file://home/kelson/projects/microservices-demo/config-server-repository
+          uri: https://github.com/kelsonthony/spring-cloud-config-server-repository
+          default-label: main
+          username: kelsonthony
+          password: ENC(cE3Oxul1FBDQOPZ+NqfI6rObApNDOfqe/krr3EbGSvtmo59KEC2ScTZop+ysoDFVfjA+mNSZokjLwrYfzwRmLfw6ItohN0rt1tHrSzK6NmM=)
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: ENC(wH29dRqVXs2WxrAWG2YTbOeYODetjvg04qQIzwz39Tx/k5OkQFlkpiI+WrGR7YZtzW7xQrjhx2rhfMOv5TE9qw==)
+
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020
