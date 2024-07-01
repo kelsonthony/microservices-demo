@@ -9,9 +9,8 @@ public class TestJasypt {
         standardPBEStringEncryptor.setPassword("Demo_Pwd!2020");
         standardPBEStringEncryptor.setAlgorithm("PBEWithHMACSHA512AndAES_256");
         standardPBEStringEncryptor.setIvGenerator(new RandomIvGenerator());
-        String result = standardPBEStringEncryptor.encrypt("");
-
-        System.out.println(result);
-        System.out.println(standardPBEStringEncryptor.decrypt(result));
+//        String result = standardPBEStringEncryptor.encrypt("");
+//        System.out.println(result);
+//        System.out.println(standardPBEStringEncryptor.decrypt(result));
     }
 }
