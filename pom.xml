@@ -6,12 +6,14 @@
 		<module>twitter-to-kafka-service</module>
 		<module>app-config-data</module>
 		<module>kafka</module>
-		<module>kafka/kafka-model</module>
 		<module>kafka/kafka-admin</module>
+		<module>kafka/kafka-consumer</module>
+		<module>kafka/kafka-model</module>
 		<module>kafka/kafka-producer</module>
 		<module>common-config</module>
         <module>config-server</module>
-	</modules>
+        <module>kafka-to-elastic-service</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -37,7 +39,6 @@
 		<kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
 		<spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
 		<spring-cloud-dependencies.version>Hoxton.SR8</spring-cloud-dependencies.version>
-		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 	</properties>
 
 	<repositories>
@@ -128,11 +129,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-security</artifactId>
 				<version>${spring-boot.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.ulisesbocchio</groupId>
-				<artifactId>jasypt-spring-boot-starter</artifactId>
-				<version>${jasypt-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.twitter4j</groupId>

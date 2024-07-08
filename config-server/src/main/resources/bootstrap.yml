@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/kelsonthony/spring-cloud-config-server-repository
           default-label: main
-          username: kelsonthony
+          username:
           password:
           clone-on-start: true
     fail-fast: true
@@ -15,7 +15,5 @@ spring:
     user:
       name: spring_cloud_user
       password:
+      #password: '{cipher}c0d85293cb01a46b3b629a12e5620f4e9d00d4ede8bdf248cf5b83e23f4536501e4b34a8d56b7a34fcee17aa01d05330'
 
-jasypt:
-  encryptor:
-    password:
