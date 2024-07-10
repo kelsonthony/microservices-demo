@@ -1,0 +1,27 @@
+2024-07-08 16:41:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2024-07-08 16:41:44 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-08 16:41:45 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9f2b0f5b-a5d0-3e50-ac08-c75b27d86a88
+2024-07-08 16:41:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-08 16:41:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-08 16:41:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-08 16:41:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-07-08 16:41:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-08 16:41:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1922 ms
+2024-07-08 16:41:46 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-08 16:41:47 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-08 16:41:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2024-07-08 16:41:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2024-07-08 16:41:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2024-07-08 16:41:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32c0fecc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3460e4ed, org.springframework.security.web.header.HeaderWriterFilter@19f497aa, org.springframework.security.web.csrf.CsrfFilter@3514ac7d, org.springframework.security.web.authentication.logout.LogoutFilter@2f73f0c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40738846, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a16d4dc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@35ceec81, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@51141f64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a453f8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ad0c70a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d13379e, org.springframework.security.web.session.SessionManagementFilter@78e387d6, org.springframework.security.web.access.ExceptionTranslationFilter@54234569, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@336d28a1]
+2024-07-08 16:41:49 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-07-08 16:41:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-08 16:41:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-08 16:41:49 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 6.652 seconds (JVM running for 8.108)
+2024-07-08 16:41:49 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08 16:41:49 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-08 16:41:49 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2024-07-08 16:41:49 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-08 16:41:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.boot.SpringApplication - Starting application on kelsonthony with PID 3854457 (started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-08 16:41:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2024-07-08 16:41:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.boot.SpringApplication - Started application in 0.267 seconds (JVM running for 9.698)
+2024-07-08 16:42:24 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

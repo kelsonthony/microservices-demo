@@ -1,0 +1,9 @@
+server:
+  port: 8082
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.config: DEBUG
+
+
+
