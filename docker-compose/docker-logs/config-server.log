@@ -479,3 +479,4 @@ Caused by: javax.crypto.BadPaddingException: Given final block not properly padd
 2024-07-10 19:46:47 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4864795334846548778/config-client.yml
 2024-07-10 19:48:06 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.EncryptionController - Encrypted data
 2024-07-10 19:48:22 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.EncryptionController - Decrypted cipher data
+2024-07-11 12:41:30 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
