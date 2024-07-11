@@ -15,15 +15,18 @@ spring:
           uri: https://github.com/kelsonthony/spring-cloud-config-server-repository
           default-label: main
           username: kelsonthony
-          #password: '{cipher}6a04fe67b70c0d50da344722516faf67c93eed3106ad6748003a65512743f0e2af89138b1e1340a84408c2da583e737c8401f2287ceda5db96a8b319361ccd75'
-          password:
+          password: '{cipher}6a04fe67b70c0d50da344722516faf67c93eed3106ad6748003a65512743f0e2af89138b1e1340a84408c2da583e737c8401f2287ceda5db96a8b319361ccd75'
+
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: '{cipher}69cd587e56221dca143b32eca0fa73f58d2a9ebece29bb24c79fe19ed3bbbb6cb928073bc8a2d915d2d5669cfcc0f8e7'
+      password: '{cipher}73617456b40fc6064d8e86958db8c2f387d226860767fd50ffaa67f175f75cb7b24396dd04469845eaaffd1e2679e76f'
       #password: springCloud!2020
 
 log:
   app-name: config-server
+
+#encrypt:
+#  key: springCloud!2020

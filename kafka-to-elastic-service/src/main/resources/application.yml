@@ -4,4 +4,15 @@ logging:
   level:
     ROOT: INFO
     org.springframework.cloud.config: DEBUG
-
+spring:
+  application:
+    name: kafka-to-elastic-service
+  profiles:
+    include: kafka_to_elastic
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      name: kafka-to-elastic-service,config-client
+      username: spring_cloud_user
+      password: '{cipher}73617456b40fc6064d8e86958db8c2f387d226860767fd50ffaa67f175f75cb7b24396dd04469845eaaffd1e2679e76f'

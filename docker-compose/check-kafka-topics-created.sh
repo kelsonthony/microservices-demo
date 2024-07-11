@@ -15,4 +15,5 @@ while [[ ! $kafkacatResult == *"twitter-topic"* ]]; do
   kafkacatResult=$(kafkacat -L -b kafka-broker-1:9092)
 done
 
-./cnb/lifecycle/launcher
+#./cnb/lifecycle/launcher
+./cnb/process/web
