@@ -16,7 +16,6 @@ spring:
           default-label: main
           username: kelsonthony
           password: '{cipher}6a04fe67b70c0d50da344722516faf67c93eed3106ad6748003a65512743f0e2af89138b1e1340a84408c2da583e737c8401f2287ceda5db96a8b319361ccd75'
-
           clone-on-start: true
     fail-fast: true
   security:
@@ -28,5 +27,5 @@ spring:
 log:
   app-name: config-server
 
-#encrypt:
-#  key: springCloud!2020
+encrypt:
+  key: springCloud!2020
