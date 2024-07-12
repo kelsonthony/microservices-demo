@@ -23,7 +23,8 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
-public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroModel> {
+public class TwitterKafkaConsumer implements KafkaConsumer<TwitterAvroModel> {
+//public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroModel> {
 
     private static  final Logger LOG = LoggerFactory.getLogger(TwitterKafkaConsumer.class);
 
@@ -54,23 +55,48 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
         this.elasticIndexClient = elasticIndexClient;
     }
 
-    @EventListener
-    public void onAppStated(ApplicationStartedEvent event) {
-        LOG.info("App Started Event: {}", event);
-        kafkaAdminClient.checkTopicsCreated();
-        LOG.info("Topics with name {} is ready to operations", kafkaConfigData.getTopicNamesToCreate().toArray());
-        Objects.requireNonNull(kafkaListenerEndpointRegistry
-                .getListenerContainer(kafkaConsumerConfigData.getConsumerGroupId())).start();
+//    @EventListener
+//    public void onAppStated(ApplicationStartedEvent event) {
+//        LOG.info("App Started Event: {}", event);
+//        kafkaAdminClient.checkTopicsCreated();
+//        LOG.info("Topics with name {} is ready to operations", kafkaConfigData.getTopicNamesToCreate().toArray());
+//        Objects.requireNonNull(kafkaListenerEndpointRegistry
+//                .getListenerContainer(kafkaConsumerConfigData.getConsumerGroupId())).start();
+//
+//    }
 
+    @EventListener
+    public void onAppStarted(ApplicationStartedEvent event) {
+        kafkaAdminClient.checkTopicsCreated();
+        LOG.info("Topics with name {} is ready for operations!", kafkaConfigData.getTopicNamesToCreate().toArray());
+        kafkaListenerEndpointRegistry.getListenerContainer("twitterTopicListener").start();
     }
 
+//    @Override
+//    @KafkaListener(id = "#{kafka-consumer-config.consumer-group-id}", topics = "${kafka-config.topic-name}")
+//    public void receive(@Payload List<TwitterAvroModel> messages,
+//                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Integer> keys,
+//                        @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
+//                        @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
+//
+//        LOG.info("{} number of message received with keys {}, partitions {} and offsets {}, " +
+//                        "sending it to elastic: Thread id {}",
+//                messages.size(),
+//                keys.toString(),
+//                partitions.toString(),
+//                offsets.toString(),
+//                Thread.currentThread().getId());
+//        List<TwitterIndexModel> twitterIndexModels = avroToElasticModelTransformer.getElasticModels(messages);
+//        List<String> documentsIds = elasticIndexClient.save(twitterIndexModels);
+//        LOG.info("Documents saved to elasticsearch with ids {}", documentsIds.toArray());
+//    }
+
     @Override
-    @KafkaListener(id = "#{kafka-consumer-config.consumer-group-id}", topics = "${kafka-config.topic-name}")
+    @KafkaListener(id = "twitterTopicListener", topics = "${kafka-config.topic-name}")
     public void receive(@Payload List<TwitterAvroModel> messages,
-                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Integer> keys,
+                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Long> keys,
                         @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
                         @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
-
         LOG.info("{} number of message received with keys {}, partitions {} and offsets {}, " +
                         "sending it to elastic: Thread id {}",
                 messages.size(),
@@ -79,7 +105,7 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
                 offsets.toString(),
                 Thread.currentThread().getId());
         List<TwitterIndexModel> twitterIndexModels = avroToElasticModelTransformer.getElasticModels(messages);
-        List<String> documentsIds = elasticIndexClient.save(twitterIndexModels);
-        LOG.info("Documents saved to elasticsearch with ids {}", documentsIds.toArray());
+        List<String> documentIds = elasticIndexClient.save(twitterIndexModels);
+        LOG.info("Documents saved to elasticsearch with ids {}", documentIds.toArray());
     }
 }
