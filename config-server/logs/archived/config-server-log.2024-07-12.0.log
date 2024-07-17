@@ -1,0 +1,477 @@
+2024-07-12 11:34:55 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.server.git.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:694)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils.decrypt(TextEncryptorUtils.java:52)
+	at org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor.postProcessEnvironment(DecryptEnvironmentPostProcessor.java:66)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:100)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:86)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:331)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 23 common frames omitted
+2024-07-12 11:35:51 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.server.git.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:694)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils.decrypt(TextEncryptorUtils.java:52)
+	at org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor.postProcessEnvironment(DecryptEnvironmentPostProcessor.java:66)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:100)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:86)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:331)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 23 common frames omitted
+2024-07-12 11:37:28 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.server.git.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:694)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils.decrypt(TextEncryptorUtils.java:52)
+	at org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor.postProcessEnvironment(DecryptEnvironmentPostProcessor.java:66)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:100)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:86)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:331)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 23 common frames omitted
+2024-07-12 11:43:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 11:43:34 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 26066 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 11:43:34 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 11:43:35 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 11:43:36 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 11:43:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 11:43:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 11:43:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 11:43:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 11:43:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 11:43:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2273 ms
+2024-07-12 11:43:37 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:43:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 11:43:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 11:43:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 11:43:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34eaf9c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4db46344, org.springframework.security.web.header.HeaderWriterFilter@5e6522a6, org.springframework.security.web.csrf.CsrfFilter@8cb7185, org.springframework.security.web.authentication.logout.LogoutFilter@4e96cb04, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43b172e3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@66863941, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5bbf744b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5c79c5ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@702b656a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578b2dec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55881f40, org.springframework.security.web.session.SessionManagementFilter@c4551c6, org.springframework.security.web.access.ExceptionTranslationFilter@6ec3a4c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70f5f59d]
+2024-07-12 11:43:39 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 11:43:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 11:43:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 11:43:39 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.852 seconds (JVM running for 7.151)
+2024-07-12 11:43:39 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 11:43:39 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 11:43:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 11:43:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 11:43:40 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-12 11:43:40 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:46:08 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:46:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6898169953770520608/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-6898169953770520608/'
+2024-07-12 11:46:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6898169953770520608/config-client.yml]' via location 'file:/tmp/config-repo-6898169953770520608/'
+2024-07-12 11:52:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 11:52:05 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 28860 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 11:52:05 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 11:52:06 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 11:52:07 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 11:52:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 11:52:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 11:52:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 11:52:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 11:52:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 11:52:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2141 ms
+2024-07-12 11:52:08 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:52:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 11:52:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 11:52:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 11:52:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39695803, org.springframework.security.web.context.SecurityContextPersistenceFilter@40ac0a56, org.springframework.security.web.header.HeaderWriterFilter@5eb2972f, org.springframework.security.web.csrf.CsrfFilter@2cadcff6, org.springframework.security.web.authentication.logout.LogoutFilter@3a80c534, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37caecda, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@528f5b7f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@304068, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43b172e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ec3a4c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@702b656a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54d60fa1, org.springframework.security.web.session.SessionManagementFilter@5d32c1c7, org.springframework.security.web.access.ExceptionTranslationFilter@a44effb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e7cd0df]
+2024-07-12 11:52:10 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 11:52:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 11:52:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 11:52:10 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.664 seconds (JVM running for 7.158)
+2024-07-12 11:52:10 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 11:52:10 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 11:52:10 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 11:52:10 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 11:52:10 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 11:52:10 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:52:28 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:52:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14000656852229177601/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-14000656852229177601/'
+2024-07-12 11:52:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14000656852229177601/config-client.yml]' via location 'file:/tmp/config-repo-14000656852229177601/'
+2024-07-12 11:55:27 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 11:55:27 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14000656852229177601/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-14000656852229177601/'
+2024-07-12 11:55:27 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14000656852229177601/config-client.yml]' via location 'file:/tmp/config-repo-14000656852229177601/'
+2024-07-12 12:01:23 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 12:22:33 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 38400 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 12:22:33 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 12:22:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 12:22:34 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 12:22:35 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 12:22:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 12:22:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:22:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 12:22:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 12:22:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 12:22:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2243 ms
+2024-07-12 12:22:36 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:22:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 12:22:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 12:22:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 12:22:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b8cf049, org.springframework.security.web.context.SecurityContextPersistenceFilter@70ecf57b, org.springframework.security.web.header.HeaderWriterFilter@4ede035e, org.springframework.security.web.csrf.CsrfFilter@5f166f2e, org.springframework.security.web.authentication.logout.LogoutFilter@92fd091, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13b29b34, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@311d28f5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2336cd91, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c206b14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a336906, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1efcba00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a944af9, org.springframework.security.web.session.SessionManagementFilter@4272d8cf, org.springframework.security.web.access.ExceptionTranslationFilter@218f2f51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64ed18ec]
+2024-07-12 12:22:38 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 12:22:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:22:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 12:22:38 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 6.104 seconds (JVM running for 7.353)
+2024-07-12 12:22:38 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 12:22:38 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 12:22:39 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 12:22:39 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 12:22:39 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 12:22:39 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:23:02 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:23:02 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6165727275163734731/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-6165727275163734731/'
+2024-07-12 12:23:02 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6165727275163734731/config-client.yml]' via location 'file:/tmp/config-repo-6165727275163734731/'
+2024-07-12 12:25:44 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:25:45 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6165727275163734731/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-6165727275163734731/'
+2024-07-12 12:25:45 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6165727275163734731/config-client.yml]' via location 'file:/tmp/config-repo-6165727275163734731/'
+2024-07-12 12:26:44 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 12:26:50 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 40266 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 12:26:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 12:26:50 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 12:26:51 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 12:26:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 12:26:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 12:26:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:26:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 12:26:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 12:26:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 12:26:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2159 ms
+2024-07-12 12:26:53 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:26:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 12:26:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 12:26:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 12:26:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@248b2b61, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ccfac29, org.springframework.security.web.header.HeaderWriterFilter@4db46344, org.springframework.security.web.csrf.CsrfFilter@58ec8271, org.springframework.security.web.authentication.logout.LogoutFilter@62054faf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1cb849b2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48ee3c2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b61e97, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@474ce6b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77ea960f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ff542a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11d1735e, org.springframework.security.web.session.SessionManagementFilter@702b656a, org.springframework.security.web.access.ExceptionTranslationFilter@5e6522a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fdf7da2]
+2024-07-12 12:26:55 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 12:26:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:26:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 12:26:55 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.773 seconds (JVM running for 7.245)
+2024-07-12 12:26:55 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 12:26:55 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 12:26:55 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 12:26:55 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 12:26:55 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 12:26:55 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:27:40 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:27:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13295160806750918142/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-13295160806750918142/'
+2024-07-12 12:27:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13295160806750918142/config-client.yml]' via location 'file:/tmp/config-repo-13295160806750918142/'
+2024-07-12 12:36:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 12:36:45 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 43714 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 12:36:45 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 12:36:45 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 12:36:47 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 12:36:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 12:36:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:36:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 12:36:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 12:36:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 12:36:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2292 ms
+2024-07-12 12:36:48 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:36:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 12:36:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 12:36:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 12:36:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3de45b6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4dac40b, org.springframework.security.web.header.HeaderWriterFilter@2a54c92e, org.springframework.security.web.csrf.CsrfFilter@538e74fc, org.springframework.security.web.authentication.logout.LogoutFilter@5f166f2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6cc56b32, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25b4754a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@37caecda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@526893f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b788dc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40ac0a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7be7c052, org.springframework.security.web.session.SessionManagementFilter@1fb71788, org.springframework.security.web.access.ExceptionTranslationFilter@343d1d25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56f2c9e8]
+2024-07-12 12:36:50 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 12:36:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:36:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 12:36:50 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.803 seconds (JVM running for 7.029)
+2024-07-12 12:36:50 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 12:36:50 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 12:36:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 12:36:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 12:36:50 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 12:36:50 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:37:21 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:37:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11454685669937312742/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-11454685669937312742/'
+2024-07-12 12:37:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11454685669937312742/config-client.yml]' via location 'file:/tmp/config-repo-11454685669937312742/'
+2024-07-12 12:40:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 12:40:14 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 46504 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 12:40:14 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 12:40:15 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 12:40:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 12:40:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 12:40:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:40:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 12:40:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 12:40:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 12:40:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2095 ms
+2024-07-12 12:40:17 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:40:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 12:40:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 12:40:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 12:40:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@304068, org.springframework.security.web.context.SecurityContextPersistenceFilter@25b4754a, org.springframework.security.web.header.HeaderWriterFilter@29699283, org.springframework.security.web.csrf.CsrfFilter@76e00bdb, org.springframework.security.web.authentication.logout.LogoutFilter@fd5689d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7be7c052, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ccfac29, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@54d60fa1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39695803, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bb50de6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@528f5b7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cb849b2, org.springframework.security.web.session.SessionManagementFilter@a6dffdb, org.springframework.security.web.access.ExceptionTranslationFilter@3ee258, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@900649e]
+2024-07-12 12:40:18 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 12:40:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 12:40:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 12:40:19 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.71 seconds (JVM running for 6.997)
+2024-07-12 12:40:19 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 12:40:19 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 12:40:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 12:40:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 12:40:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-07-12 12:40:19 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:41:20 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 12:41:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8664698239507487248/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-8664698239507487248/'
+2024-07-12 12:41:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8664698239507487248/config-client.yml]' via location 'file:/tmp/config-repo-8664698239507487248/'
+2024-07-12 12:45:07 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 13:13:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 13:13:06 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 57863 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 13:13:06 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 13:13:06 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 13:13:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 13:13:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 13:13:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 13:13:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 13:13:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 13:13:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 13:13:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2362 ms
+2024-07-12 13:13:09 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:13:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 13:13:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 13:13:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 13:13:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70169464, org.springframework.security.web.context.SecurityContextPersistenceFilter@578b2dec, org.springframework.security.web.header.HeaderWriterFilter@1ef93e01, org.springframework.security.web.csrf.CsrfFilter@a6dffdb, org.springframework.security.web.authentication.logout.LogoutFilter@6ed691fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5bbf744b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@16f34376, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1115be8c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@120d6cbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39f4a7c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39afe59f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64ed18ec, org.springframework.security.web.session.SessionManagementFilter@6cd66f6a, org.springframework.security.web.access.ExceptionTranslationFilter@3ccfac29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@99c3cee]
+2024-07-12 13:13:11 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 13:13:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 13:13:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 13:13:11 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.937 seconds (JVM running for 7.35)
+2024-07-12 13:13:11 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 13:13:11 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 13:13:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 13:13:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 13:13:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-12 13:13:11 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:13:33 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:13:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:13:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:14:39 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:14:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:14:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:16:58 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:16:58 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:16:58 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-15384355153710353554/config-client.yml]' via location 'file:/tmp/config-repo-15384355153710353554/'
+2024-07-12 13:18:17 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 13:18:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 13:18:55 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 59909 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 13:18:55 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 13:18:56 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 13:18:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 13:18:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 13:18:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 13:18:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 13:18:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 13:18:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 13:18:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2239 ms
+2024-07-12 13:18:58 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:19:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 13:19:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 13:19:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 13:19:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7853363c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fafd27e, org.springframework.security.web.header.HeaderWriterFilter@5c41b8d8, org.springframework.security.web.csrf.CsrfFilter@5eb2972f, org.springframework.security.web.authentication.logout.LogoutFilter@3578a45b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2db461b5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@218f2f51, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6282f1eb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4ca5cb99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d512c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36e3321e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120d6cbf, org.springframework.security.web.session.SessionManagementFilter@5f166f2e, org.springframework.security.web.access.ExceptionTranslationFilter@56c6d515, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cb849b2]
+2024-07-12 13:19:00 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 13:19:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 13:19:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 13:19:00 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.832 seconds (JVM running for 7.052)
+2024-07-12 13:19:00 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 13:19:00 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 13:19:01 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 13:19:01 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 13:19:01 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-12 13:19:01 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:19:36 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:19:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:19:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:24:23 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:24:23 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:24:23 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:25:31 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:25:31 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:25:31 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:26:06 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 13:26:06 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 13:26:06 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-11212834398319563067/config-client.yml]' via location 'file:/tmp/config-repo-11212834398319563067/'
+2024-07-12 14:05:42 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 14:14:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 14:14:08 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 73693 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 14:14:08 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 14:14:08 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-07-12 14:14:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5313b435-fa37-381a-81c1-c29d64ea167a
+2024-07-12 14:14:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 14:14:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:14:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 14:14:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-07-12 14:14:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 14:14:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2106 ms
+2024-07-12 14:14:11 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:14:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 14:14:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 14:14:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 14:14:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54d60fa1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ec3a4c2, org.springframework.security.web.header.HeaderWriterFilter@5d32c1c7, org.springframework.security.web.csrf.CsrfFilter@7ee2423, org.springframework.security.web.authentication.logout.LogoutFilter@36e3321e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ab9d160, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c41b8d8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1cb849b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@304068, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b6b487c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ccfac29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe2a366, org.springframework.security.web.session.SessionManagementFilter@40ac0a56, org.springframework.security.web.access.ExceptionTranslationFilter@4f676900, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8b89b3a]
+2024-07-12 14:14:13 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 14:14:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:14:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 14:14:13 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.928 seconds (JVM running for 7.171)
+2024-07-12 14:14:13 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-07-12 14:14:13 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-07-12 14:14:13 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 14:14:13 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 14:14:13 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 14:14:13 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:14:33 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:14:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:14:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:21:34 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:21:34 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:21:34 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:22:12 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:22:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:22:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-13658747004027046985/config-client.yml]' via location 'file:/tmp/config-repo-13658747004027046985/'
+2024-07-12 14:22:36 [SpringContextShutdownHook] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-12 14:39:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 14:39:27 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 81304 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 14:39:27 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 14:39:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c789c12f-ebf3-36e4-9bc3-cfe6e3c24f73
+2024-07-12 14:39:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 14:39:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:39:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 14:39:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-07-12 14:39:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 14:39:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3822 ms
+2024-07-12 14:39:32 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:39:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 14:39:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 14:39:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 14:39:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ec427, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d18338b, org.springframework.security.web.header.HeaderWriterFilter@579f3c8e, org.springframework.security.web.csrf.CsrfFilter@63b4b9c6, org.springframework.security.web.authentication.logout.LogoutFilter@12166229, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ba97962, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@61c5fd78, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c8d45cf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@df9d400, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c8c6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@351d93bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fde487b, org.springframework.security.web.session.SessionManagementFilter@4e2824b1, org.springframework.security.web.access.ExceptionTranslationFilter@6a902015, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2beee3e8]
+2024-07-12 14:39:34 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 14:39:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:39:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 14:39:35 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 9.325 seconds (JVM running for 12.256)
+2024-07-12 14:39:35 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 14:39:35 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 14:39:35 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 14:39:35 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:53:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 14:53:40 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 85054 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 14:53:41 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 14:53:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c789c12f-ebf3-36e4-9bc3-cfe6e3c24f73
+2024-07-12 14:53:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 14:53:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:53:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 14:53:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-07-12 14:53:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 14:53:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2237 ms
+2024-07-12 14:53:44 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:53:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 14:53:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 14:53:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 14:53:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c56eba5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6df37f7a, org.springframework.security.web.header.HeaderWriterFilter@42503099, org.springframework.security.web.csrf.CsrfFilter@3c64339f, org.springframework.security.web.authentication.logout.LogoutFilter@6b030101, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b34c7c9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2bcb1414, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6231f77a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2abedbbd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bdb4f17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@208e5b23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@290c266c, org.springframework.security.web.session.SessionManagementFilter@60844992, org.springframework.security.web.access.ExceptionTranslationFilter@7b8b07ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fde487b]
+2024-07-12 14:53:45 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 14:53:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 14:53:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 14:53:45 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.64 seconds (JVM running for 7.166)
+2024-07-12 14:53:46 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 14:53:46 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 14:53:46 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-12 14:53:46 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:54:09 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 14:54:10 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 14:54:10 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:10:24 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:10:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:10:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:18:17 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:18:17 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:18:17 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:22:25 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:22:25 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:22:25 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:29:28 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:29:29 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:29:29 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17225182782075705643/config-client.yml]' via location 'file:/tmp/config-repo-17225182782075705643/'
+2024-07-12 15:46:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-12 15:46:48 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 11.0.23 on kelsonthony with PID 102969 (/home/kelson/projects/microservices-demo/config-server/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-12 15:46:48 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2024-07-12 15:46:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c789c12f-ebf3-36e4-9bc3-cfe6e3c24f73
+2024-07-12 15:46:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2024-07-12 15:46:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-12 15:46:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-12 15:46:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-07-12 15:46:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-12 15:46:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2918 ms
+2024-07-12 15:46:52 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:46:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2024-07-12 15:46:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2024-07-12 15:46:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2024-07-12 15:46:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2abedbbd, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ee456c7, org.springframework.security.web.header.HeaderWriterFilter@61c5fd78, org.springframework.security.web.csrf.CsrfFilter@521a506c, org.springframework.security.web.authentication.logout.LogoutFilter@429f0ca8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61b8c9de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@208e5b23, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2c56eba5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@246df37b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39514976, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12166229, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6231f77a, org.springframework.security.web.session.SessionManagementFilter@39dda56f, org.springframework.security.web.access.ExceptionTranslationFilter@1328f482, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c8d45cf]
+2024-07-12 15:46:53 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-12 15:46:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-12 15:46:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2024-07-12 15:46:53 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 6.727 seconds (JVM running for 8.185)
+2024-07-12 15:46:54 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12 15:46:54 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-12 15:46:54 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-12 15:46:54 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:50:28 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:50:28 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client-twitter_to_kafka.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
+2024-07-12 15:50:28 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
+2024-07-12 15:57:31 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 15:57:32 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
+2024-07-12 15:57:32 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
+2024-07-12 16:12:21 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/kelsonthony/spring-cloud-config-server-repository
+2024-07-12 16:12:22 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
+2024-07-12 16:12:22 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-8248977953633093438/config-client.yml]' via location 'file:/tmp/config-repo-8248977953633093438/'
