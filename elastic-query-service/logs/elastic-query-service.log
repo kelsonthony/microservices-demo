@@ -1162,3 +1162,8 @@ Caused by: java.lang.IllegalArgumentException: username cannot be null
 2024-07-17 17:25:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
 2024-07-17 17:25:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
 2024-07-17 17:25:44 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 6.647 seconds (JVM running for 8.296)
+2024-07-17 17:44:06 [http-nio-8183-exec-3] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-17 17:44:06 [http-nio-8183-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-17 17:44:06 [http-nio-8183-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-17 17:58:02 [http-nio-8183-exec-10] INFO  c.m.d.e.q.s.a.ElasticDocumentController - Returning all documents
+2024-07-17 18:00:12 [http-nio-8183-exec-6] INFO  c.m.d.e.q.s.a.ElasticDocumentController - Elasticseach returned 1 of documents

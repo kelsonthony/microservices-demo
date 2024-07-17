@@ -29,7 +29,7 @@ public class ElasticDocumentController {
                 ElasticQueryServiceResponseModel.builder()
                         .id(id)
                         .build();
-        LOG.debug("Elasticseach returned document with id: {}", id);
+        LOG.debug("Elasticsearch returned document with id: {}", id);
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
 
@@ -43,7 +43,7 @@ public class ElasticDocumentController {
                         .text(elasticQueryServiceRequestModel.getText())
                         .build();
         response.add(elasticQueryServiceResponseModel);
-        LOG.info("Elasticseach returned {} of documents", response.size());
+        LOG.info("Elasticsearch returned {} of documents", response.size());
         return ResponseEntity.ok(response);
     }
 
