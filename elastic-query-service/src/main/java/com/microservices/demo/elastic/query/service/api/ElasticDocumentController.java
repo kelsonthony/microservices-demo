@@ -3,6 +3,12 @@ package com.microservices.demo.elastic.query.service.api;
 import com.microservices.demo.elastic.query.service.business.ElasticQueryService;
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceRequestModel;
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceResponseModel;
+import com.microservices.demo.elastic.query.service.model.assembler.ElasticQueryServiceResponseModelV2;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -10,11 +16,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/documents")
+@RequestMapping(value = "/documents", produces = "application/vnd.api.v1+json")
 public class ElasticDocumentController {
 
     public static final Logger LOG = LoggerFactory.getLogger(ElasticDocumentController.class);
@@ -25,13 +30,33 @@ public class ElasticDocumentController {
         this.elasticQueryService = elasticQueryService;
     }
 
-    @GetMapping("/")
+    @Operation(summary = "Get all documents")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully response", content = {
+                    @Content(mediaType = "application/vnd.api.v1+json",
+                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class)
+                    )
+            }),
+            @ApiResponse(responseCode = "400", description = "Bad request"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
+    })
+    @GetMapping("")
     public ResponseEntity<List<ElasticQueryServiceResponseModel>> getAllDocuments() {
         List<ElasticQueryServiceResponseModel> response = elasticQueryService.getAllDocuments();
         LOG.info("Returning all documents", response.size());
         return ResponseEntity.ok(response);
     }
 
+    @Operation(summary = "Get document by Id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully response", content = {
+                    @Content(mediaType = "application/vnd.api.v1+json",
+                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class)
+                    )
+            }),
+            @ApiResponse(responseCode = "400", description = "Bad request"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
+    })
     @GetMapping("/{id}")
     public ResponseEntity<ElasticQueryServiceResponseModel> getDocumentById(@PathVariable @NotEmpty String id) {
         ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
@@ -39,6 +64,34 @@ public class ElasticDocumentController {
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
 
+    @Operation(summary = "Get document by Id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully response", content = {
+                    @Content(mediaType = "application/vnd.api.v2+json",
+                            schema = @Schema(implementation = ElasticQueryServiceResponseModelV2.class)
+                    )
+            }),
+            @ApiResponse(responseCode = "400", description = "Bad request"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
+    })
+    @GetMapping(value = "/{id}", produces = "application/vnd.api.v2+json")
+    public ResponseEntity<ElasticQueryServiceResponseModelV2> getDocumentByIdV2(@PathVariable @NotEmpty String id) {
+        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
+        ElasticQueryServiceResponseModelV2 elasticQueryServiceResponseModelV2 = getV2Model(elasticQueryServiceResponseModel);
+        LOG.debug("Elasticsearch returned document with id: {}", id);
+        return ResponseEntity.ok(elasticQueryServiceResponseModelV2);
+    }
+
+    @Operation(summary = "Get All documents by text")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully response", content = {
+                    @Content(mediaType = "application/vnd.api.v1+json",
+                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class)
+                    )
+            }),
+            @ApiResponse(responseCode = "400", description = "Bad request"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
+    })
     @PostMapping("/get-document-by-text")
     public ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(
             @RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel
@@ -47,6 +100,17 @@ public class ElasticDocumentController {
                 elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText());
         LOG.info("Elasticsearch returned {} of documents", response.size());
         return ResponseEntity.ok(response);
+    }
+
+    private ElasticQueryServiceResponseModelV2 getV2Model(ElasticQueryServiceResponseModel elasticQueryServiceResponseModel) {
+        ElasticQueryServiceResponseModelV2 responseModelV2 = ElasticQueryServiceResponseModelV2.builder()
+                .id(Long.parseLong(elasticQueryServiceResponseModel.getId()))
+                .userId(elasticQueryServiceResponseModel.getUserId())
+                .text(elasticQueryServiceResponseModel.getText())
+                .text2("version 2 text")
+                .build();
+        responseModelV2.add(elasticQueryServiceResponseModel.getLinks());
+        return responseModelV2;
     }
 
 }

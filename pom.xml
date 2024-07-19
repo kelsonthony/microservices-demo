@@ -55,6 +55,8 @@
 		<kafka-avro-serializer.version>6.2.0</kafka-avro-serializer.version>
 		<avro.version>1.10.2</avro.version>
 
+		<springdoc-openapi-ui.version>1.5.10</springdoc-openapi-ui.version>
+
 	</properties>
 
 	<repositories>
@@ -195,6 +197,11 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc-openapi-ui.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.avro</groupId>
