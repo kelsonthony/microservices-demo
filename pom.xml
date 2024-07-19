@@ -53,7 +53,7 @@
 		<elasticsearch.version>7.13.4</elasticsearch.version>
 
 		<kafka-avro-serializer.version>6.2.0</kafka-avro-serializer.version>
-		<avro.version>1.10.2</avro.version>
+		<avro.version>1.11.3</avro.version>
 
 	</properties>
 
