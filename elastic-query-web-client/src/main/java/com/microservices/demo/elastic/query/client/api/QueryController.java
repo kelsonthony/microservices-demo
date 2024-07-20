@@ -44,7 +44,7 @@ public class QueryController {
                 .id("1")
                 .text(elasticQueryWebClientRequestModel.getText())
                 .build());
-        model.addAttribute("ElasticQueryWebClientRequestModel", elasticQueryWebClientRequestModel);
+        model.addAttribute("ElasticQueryWebClientRequestModel", responseModels);
         model.addAttribute("searchText", elasticQueryWebClientRequestModel.getText());
         model.addAttribute("ElasticQueryWebClientRequestModel",
                 ElasticQueryWebClientRequestModel.builder().build());
