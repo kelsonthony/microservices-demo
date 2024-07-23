@@ -1,4 +1,4 @@
-2024-07-23 01:39:14 [reactor-http-epoll-2] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
+2024-07-22 20:53:11 [reactor-http-epoll-2] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
 reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.elasticsearch.client.NoReachableHostException: Host 'localhost:9200' not reachable. Cluster state is offline.
 Caused by: org.springframework.data.elasticsearch.client.NoReachableHostException: Host 'localhost:9200' not reachable. Cluster state is offline.
 	at org.springframework.data.elasticsearch.client.reactive.SingleNodeHostProvider.lambda$lookupActiveHost$3(SingleNodeHostProvider.java:101)

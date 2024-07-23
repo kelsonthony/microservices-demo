@@ -2,6 +2,7 @@ package com.microservices.demo.elastic.query.client.api;
 
 import com.microservices.demo.elastic.query.client.model.ElasticQueryWebClientRequestModel;
 import com.microservices.demo.elastic.query.client.model.ElasticQueryWebClientResponseModel;
+import com.microservices.demo.elastic.query.client.service.ElasticQueryWebClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,12 @@ public class QueryController {
 
     private static final Logger LOG = LoggerFactory.getLogger(QueryController.class);
 
+    private final ElasticQueryWebClient elasticQueryWebClient;
+
+    public QueryController(ElasticQueryWebClient elasticQueryWebClient) {
+        this.elasticQueryWebClient = elasticQueryWebClient;
+    }
+
     @GetMapping("")
     public String index() {
         return "index";
@@ -25,28 +32,25 @@ public class QueryController {
 
     @GetMapping("/error")
     public String error() {
-        return "index";
+        return "error";
     }
 
     @GetMapping("/home")
     public String home(Model model) {
-        model.addAttribute("ElasticQueryWebClientRequestModel",
+        model.addAttribute("elasticQueryWebClientRequestModel",
                 ElasticQueryWebClientRequestModel.builder().build());
         return "home";
     }
 
     @PostMapping("/query-by-text")
-    public String queryByText(@Valid ElasticQueryWebClientRequestModel elasticQueryWebClientRequestModel,
+    public String queryByText(@Valid ElasticQueryWebClientRequestModel requestModel,
                               Model model) {
-        LOG.info("Querying with text: {}", elasticQueryWebClientRequestModel.getText());
-        List<ElasticQueryWebClientResponseModel> responseModels = new ArrayList<>();
-        responseModels.add(ElasticQueryWebClientResponseModel.builder()
-                .id("1")
-                .text(elasticQueryWebClientRequestModel.getText())
-                .build());
-        model.addAttribute("ElasticQueryWebClientRequestModel", responseModels);
-        model.addAttribute("searchText", elasticQueryWebClientRequestModel.getText());
-        model.addAttribute("ElasticQueryWebClientRequestModel",
+        LOG.info("Querying with text {}", requestModel.getText());
+        List<ElasticQueryWebClientResponseModel> responseModels = elasticQueryWebClient.getDataByText(requestModel);
+
+        model.addAttribute("elasticQueryWebClientResponseModels", responseModels);
+        model.addAttribute("searchText", requestModel.getText());
+        model.addAttribute("elasticQueryWebClientRequestModel",
                 ElasticQueryWebClientRequestModel.builder().build());
         return "home";
     }
