@@ -17,7 +17,10 @@
         <module>common-util</module>
         <module>elastic-query-service</module>
         <module>elastic-query-web-client</module>
-    </modules>
+        <module>elastic-query-service-common</module>
+		<module>elastic-query-web-client-common</module>
+		<module>reactive-elastic-query-service</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -74,6 +77,16 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- LOCAL -->
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-web-client-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-service-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.microservices.demo</groupId>
 				<artifactId>elastic-query-client</artifactId>

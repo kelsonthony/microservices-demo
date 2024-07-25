@@ -1,0 +1,92 @@
+2024-07-25 15:58:02 [main] INFO  c.m.d.r.e.q.s.ReactiveElasticQueryServiceApplication - Starting ReactiveElasticQueryServiceApplication using Java 11.0.23 on kelsonthony with PID 138063 (/home/kelson/projects/microservices-demo/reactive-elastic-query-service/target/classes started by kelson in /home/kelson/projects/microservices-demo)
+2024-07-25 15:58:02 [main] INFO  c.m.d.r.e.q.s.ReactiveElasticQueryServiceApplication - The following profiles are active: reactive_elastic_query
+2024-07-25 15:58:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-07-25 15:58:02 [main] INFO  o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-07-25 15:58:02 [main] INFO  o.s.b.c.config.ConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[reactive_elastic_query], label=null, version=24438091ccdcc0e80132f798895d94e1f48af521, state=null
+2024-07-25 15:58:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-07-25 15:58:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 0 Elasticsearch repository interfaces.
+2024-07-25 15:58:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-07-25 15:58:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 Reactive Elasticsearch repository interfaces.
+2024-07-25 15:58:03 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f55519ed-5010-3ce7-bab4-8232117d794d
+2024-07-25 15:58:04 [reactor-http-epoll-2] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.3
+2024-07-25 15:58:04 [reactor-http-epoll-2] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2024-07-25 15:58:04 [reactor-http-epoll-2] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.4
+2024-07-25 15:58:04 [reactor-http-epoll-2] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.12.1 - 7.13.4
+2024-07-25 15:58:04 [reactor-http-epoll-2] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.4
+2024-07-25 15:58:04 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 24b50129-814a-44d0-93dd-09df12337187
+
+2024-07-25 15:58:05 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.4-c5f60e894ca0c61cdbae4f5a686d9f08bcefc942 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2024-07-25 15:58:05 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8183
+2024-07-25 15:58:05 [main] INFO  c.m.d.r.e.q.s.ReactiveElasticQueryServiceApplication - Started ReactiveElasticQueryServiceApplication in 5.437 seconds (JVM running for 8.154)
+2024-07-25 16:00:38 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterElasticQueryService - Querying reactive elasticsearch for text test
+2024-07-25 16:00:38 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterReactiveElasticQueryClient - Getting data from elasticsearch for text test
+2024-07-25 16:00:38 [reactor-http-epoll-2] INFO  reactor.Flux.Map.1 - onSubscribe(FluxMap.MapSubscriber)
+2024-07-25 16:00:38 [reactor-http-epoll-2] INFO  reactor.Flux.Map.1 - request(1)
+2024-07-25 16:00:39 [reactor-http-epoll-2] INFO  reactor.Flux.Map.1 - onComplete()
+2024-07-25 16:02:42 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterElasticQueryService - Querying reactive elasticsearch for text test
+2024-07-25 16:02:42 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterReactiveElasticQueryClient - Getting data from elasticsearch for text test
+2024-07-25 16:02:42 [reactor-http-epoll-2] INFO  reactor.Flux.Map.2 - onSubscribe(FluxMap.MapSubscriber)
+2024-07-25 16:02:42 [reactor-http-epoll-2] INFO  reactor.Flux.Map.2 - request(1)
+2024-07-25 16:02:42 [reactor-http-epoll-3] INFO  reactor.Flux.Map.2 - onComplete()
+2024-07-25 16:02:53 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterElasticQueryService - Querying reactive elasticsearch for text kafka
+2024-07-25 16:02:53 [reactor-http-epoll-2] INFO  c.m.d.r.e.q.s.b.i.TwitterReactiveElasticQueryClient - Getting data from elasticsearch for text kafka
+2024-07-25 16:02:53 [reactor-http-epoll-2] INFO  reactor.Flux.Map.3 - onSubscribe(FluxMap.MapSubscriber)
+2024-07-25 16:02:53 [reactor-http-epoll-2] INFO  reactor.Flux.Map.3 - request(1)
+2024-07-25 16:02:54 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5425481685446762755, userId=6020881088176802410, text=amet ipsum ultricies Kafka pulvinar Maecenas, createdAt=2024-07-23T01:47:23Z))
+2024-07-25 16:02:54 [reactor-http-epoll-2] INFO  reactor.Flux.Map.3 - request(31)
+2024-07-25 16:02:55 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6553616039405919268, userId=1611899363144578826, text=porttitor ipsum sed Kafka amet ultricies, createdAt=2024-07-23T01:47:33Z))
+2024-07-25 16:02:55 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=2192627800205026383, userId=4285873138435567906, text=lectus porttitor magna Kafka Lorem posuere, createdAt=2024-07-23T02:20:53Z))
+2024-07-25 16:02:56 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=2016410902694091551, userId=702590162405042905, text=dolor ultricies dolor Kafka consectetuer dolor, createdAt=2024-07-23T02:30:33Z))
+2024-07-25 16:02:56 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=7138920512373763463, userId=4702373758927908068, text=magna ipsum lectus Kafka sit Maecenas, createdAt=2024-07-23T02:36:33Z))
+2024-07-25 16:02:57 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1487418751401868546, userId=1973563380702234447, text=posuere adipiscing Maecenas Kafka Lorem posuere, createdAt=2024-07-23T02:41:43Z))
+2024-07-25 16:02:57 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=8629136946515120494, userId=5873206504008941744, text=congue Lorem adipiscing Kafka dolor malesuada, createdAt=2024-07-23T03:31:14Z))
+2024-07-25 16:02:58 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=4329918532412294020, userId=7969671958992063512, text=adipiscing libero massa Kafka adipiscing porttitor, createdAt=2024-07-23T03:44:24Z))
+2024-07-25 16:02:58 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=2039046098570963182, userId=6460560940972850200, text=lectus Lorem porttitor Kafka porttitor congue, createdAt=2024-07-23T03:53:34Z))
+2024-07-25 16:02:59 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6246386820664788357, userId=3822363800452229738, text=sed posuere posuere Kafka adipiscing magna, createdAt=2024-07-23T04:12:04Z))
+2024-07-25 16:02:59 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=8183267260507376837, userId=766864692234940753, text=massa libero massa Kafka posuere porttitor, createdAt=2024-07-23T04:18:14Z))
+2024-07-25 16:03:00 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1572736464609668664, userId=4067908806761669308, text=Fusce magna libero Kafka Maecenas Maecenas, createdAt=2024-07-23T04:54:34Z))
+2024-07-25 16:03:00 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1570114691310255666, userId=2635792570481981287, text=ipsum posuere ipsum Kafka sit Maecenas, createdAt=2024-07-23T05:00:14Z))
+2024-07-25 16:03:01 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1127530567303597176, userId=4555457258467637658, text=Fusce porttitor congue Kafka sit massa, createdAt=2024-07-23T05:11:54Z))
+2024-07-25 16:03:01 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=257111639860749054, userId=5416361741508072864, text=posuere ipsum Lorem Kafka massa massa, createdAt=2024-07-23T05:20:34Z))
+2024-07-25 16:03:02 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=2363949946159058861, userId=208576164091562966, text=sed elit purus Kafka adipiscing lectus, createdAt=2024-07-23T05:43:24Z))
+2024-07-25 16:03:02 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1075372899890360847, userId=5747061203758114628, text=malesuada sed libero Kafka consectetuer congue, createdAt=2024-07-23T06:01:25Z))
+2024-07-25 16:03:03 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6711513915499430378, userId=9064050419723211532, text=amet adipiscing lectus Kafka massa ultricies, createdAt=2024-07-23T06:01:15Z))
+2024-07-25 16:03:03 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3362588837739103500, userId=6413669509244132994, text=magna porttitor adipiscing Kafka massa sed, createdAt=2024-07-23T06:05:05Z))
+2024-07-25 16:03:04 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6131802407826770725, userId=6948149086568114417, text=posuere sed amet Kafka malesuada malesuada, createdAt=2024-07-23T06:04:15Z))
+2024-07-25 16:03:04 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3041487461864315433, userId=4367511127393197164, text=posuere libero Lorem Kafka magna Lorem, createdAt=2024-07-23T06:03:45Z))
+2024-07-25 16:03:05 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=7591374304650524134, userId=5731424888423083195, text=adipiscing pulvinar posuere Kafka malesuada posuere, createdAt=2024-07-23T06:28:05Z))
+2024-07-25 16:03:05 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5508401506273215734, userId=7270518769248484522, text=Lorem libero dolor Kafka ultricies ipsum, createdAt=2024-07-23T06:27:45Z))
+2024-07-25 16:03:06 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=466984131470490273, userId=8567442843494453962, text=malesuada sit pulvinar Kafka malesuada purus, createdAt=2024-07-23T07:09:55Z))
+2024-07-25 16:03:06 [parallel-3] INFO  reactor.Flux.Map.3 - request(24)
+2024-07-25 16:03:06 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1650785416111784797, userId=6806856018646010551, text=amet adipiscing posuere Kafka porttitor congue, createdAt=2024-07-23T07:48:35Z))
+2024-07-25 16:03:07 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=7318414224999438399, userId=3870469748070518801, text=posuere congue amet Kafka congue magna, createdAt=2024-07-23T08:05:55Z))
+2024-07-25 16:03:07 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5090427649870509246, userId=5656819094995409996, text=elit pulvinar dolor Kafka massa pulvinar, createdAt=2024-07-23T08:29:45Z))
+2024-07-25 16:03:08 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=703917711272389542, userId=1616512604491819384, text=posuere massa ipsum Kafka magna malesuada, createdAt=2024-07-23T09:05:55Z))
+2024-07-25 16:03:08 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3106568371646372918, userId=5407176530370108991, text=purus Lorem Maecenas Kafka porttitor pulvinar, createdAt=2024-07-23T09:17:45Z))
+2024-07-25 16:03:09 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5844633276532415934, userId=4957664541158158318, text=massa massa sit Kafka Fusce massa, createdAt=2024-07-23T09:33:05Z))
+2024-07-25 16:03:09 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=12136525311281066, userId=4809480920301076595, text=Maecenas purus sed Kafka amet posuere, createdAt=2024-07-23T09:38:35Z))
+2024-07-25 16:03:10 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5256367643491355425, userId=8059348258650255349, text=Maecenas Maecenas pulvinar Kafka malesuada consectetuer, createdAt=2024-07-23T09:41:45Z))
+2024-07-25 16:03:10 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1458985029272150786, userId=8423754567845608986, text=massa pulvinar adipiscing Kafka adipiscing elit, createdAt=2024-07-23T09:57:06Z))
+2024-07-25 16:03:11 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=5279747061654168766, userId=5648040182725899546, text=amet Lorem Fusce Kafka purus pulvinar, createdAt=2024-07-23T10:05:46Z))
+2024-07-25 16:03:11 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=7299752833995609651, userId=5156230640310090236, text=congue Fusce consectetuer Kafka consectetuer Lorem, createdAt=2024-07-23T10:20:46Z))
+2024-07-25 16:03:12 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=4865313503151503819, userId=4057806346146863411, text=ipsum magna dolor Kafka pulvinar amet, createdAt=2024-07-23T10:44:36Z))
+2024-07-25 16:03:12 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=7932736354311230443, userId=967449924906534297, text=lectus sed ipsum Kafka sed sit, createdAt=2024-07-23T10:57:16Z))
+2024-07-25 16:03:13 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3597776531371282063, userId=6760459728156616724, text=massa libero malesuada Kafka dolor amet, createdAt=2024-07-23T11:09:36Z))
+2024-07-25 16:03:13 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=363147679433417310, userId=6522784934989487501, text=massa elit dolor Kafka ipsum Lorem, createdAt=2024-07-23T11:32:16Z))
+2024-07-25 16:03:14 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=8162127908337744795, userId=7990831270486945404, text=posuere elit elit Kafka porttitor consectetuer, createdAt=2024-07-23T11:36:16Z))
+2024-07-25 16:03:14 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=419485018777144755, userId=5908912156032903905, text=ultricies massa libero Kafka sit sit, createdAt=2024-07-23T11:45:16Z))
+2024-07-25 16:03:15 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=4177613310941934638, userId=4512350209020804400, text=congue adipiscing malesuada Kafka adipiscing ultricies, createdAt=2024-07-23T12:23:26Z))
+2024-07-25 16:03:15 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1412351515239179229, userId=3199753850245305024, text=amet posuere Lorem Kafka Fusce purus, createdAt=2024-07-23T12:27:36Z))
+2024-07-25 16:03:16 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6131848528651966537, userId=2042450646131133344, text=pulvinar ipsum massa Kafka lectus pulvinar, createdAt=2024-07-23T12:39:26Z))
+2024-07-25 16:03:16 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=4786137888422859829, userId=4487293206456901220, text=Maecenas amet sed Kafka pulvinar pulvinar, createdAt=2024-07-25T15:57:42-03:00))
+2024-07-25 16:03:17 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=1371399461401521695, userId=5413006473078126197, text=magna posuere consectetuer Kafka congue sit, createdAt=2024-07-23T02:04:13Z))
+2024-07-25 16:03:18 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=422164540136805223, userId=7336993124428828683, text=adipiscing malesuada malesuada Kafka lectus amet, createdAt=2024-07-23T02:24:43Z))
+2024-07-25 16:03:18 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6897069551035274431, userId=2662814924451205248, text=sit porttitor massa Kafka lectus elit, createdAt=2024-07-23T02:25:23Z))
+2024-07-25 16:03:18 [parallel-3] INFO  reactor.Flux.Map.3 - request(24)
+2024-07-25 16:03:19 [parallel-4] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3846644008147016470, userId=5064881004024766389, text=sit libero Fusce Kafka purus libero, createdAt=2024-07-23T02:48:13Z))
+2024-07-25 16:03:19 [parallel-1] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=8785417882839977626, userId=8006758745108449622, text=Fusce amet magna Kafka purus consectetuer, createdAt=2024-07-23T02:49:23Z))
+2024-07-25 16:03:20 [parallel-2] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=6402530755298744478, userId=7699555321507412257, text=amet ultricies pulvinar Kafka pulvinar ipsum, createdAt=2024-07-23T02:59:33Z))
+2024-07-25 16:03:20 [parallel-3] INFO  reactor.Flux.Map.3 - onNext(ElasticQueryServiceResponseModel(id=3984003515994758941, userId=1393086842257142878, text=amet dolor malesuada Kafka ultricies porttitor, createdAt=2024-07-23T03:02:43Z))
+2024-07-25 16:03:20 [reactor-http-epoll-2] INFO  reactor.Flux.Map.3 - cancel()

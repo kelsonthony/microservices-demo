@@ -1,7 +1,8 @@
 package com.microservices.demo.elastic.query.client.service;
 
-import com.microservices.demo.elastic.query.client.model.ElasticQueryWebClientRequestModel;
-import com.microservices.demo.elastic.query.client.model.ElasticQueryWebClientResponseModel;
+
+import com.microservices.demo.elastic.quert.web.client.common.model.ElasticQueryWebClientRequestModel;
+import com.microservices.demo.elastic.quert.web.client.common.model.ElasticQueryWebClientResponseModel;
 
 import java.util.List;
 
