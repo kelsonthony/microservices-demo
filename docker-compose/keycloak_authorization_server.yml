@@ -1,17 +1,41 @@
-version: '3.7'
+version: '3.8'
+
 services:
-  keycloak-authorization-server:
-    image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION:-latest}
-    hostname: keycloak-server
-    ports:
-      - "8081:8081"
+  postgres:
+    image: postgres:latest
+    container_name: postgres
     environment:
-      - "KEYCLOAK_USER=admin2"
-      - "KEYCLOAK_PASSWORD=admin2"
-      - "JAVA_OPTS=-Djboss.http.port=8081"
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - keycloak-network
+    ports:
+      - "5432:5432"
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      - "KEYCLOAK_USER=admin"
+      - "KEYCLOAK_PASSWORD=admin"
       - "DB_VENDOR=POSTGRES"
-      - "DB_ADDR=172.17.0.1"
+      - "DB_ADDR=postgres"
       - "DB_DATABASE=keycloak"
-      - "DB_USER=user"
-      - "DB_SCHEMA=keycloak"
+      - "DB_USER=keycloak"
       - "DB_PASSWORD=password"
+      - "JAVA_OPTS=-Djboss.server.log.threshold=DEBUG -Djboss.as.management.blocking.timeout=600"
+    command: ["start-dev"]
+    networks:
+      - keycloak-network
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:
+
+networks:
+  keycloak-network:
+    driver: bridge
